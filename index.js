@@ -1,3 +1,4 @@
+//1
 /**
  * @param {T[]} array - an array of elements of type T
  * @returns {T} the first element of the array
@@ -10,9 +11,10 @@
  * getFirst([true,false,true]); // true
  */
 export function getFirst(array) {
-  // TODO
+  //return the first element of the array
 }
 
+//2
 /**
  * @param {T[]} array - an array of elements of type T
  * @returns {T} the last element of the array
@@ -28,6 +30,7 @@ export function getLast(array) {
   // TODO
 }
 
+//3
 /**
  * @param {T[]} array - an array of elements of type T
  * @returns {T[]} an array containing the first and last elements of the given array
@@ -45,6 +48,7 @@ export function getFirstLast(array) {
   // TODO
 }
 
+//4
 /**
  * @param {string} str1 - the first string
  * @param {string} str2 - the second string
@@ -62,6 +66,7 @@ export function sharesFirstLetter(str1, str2) {
   // TODO
 }
 
+//5
 /**
  * @param {number[]} numbers - an array of numbers
  * @returns {number[]} a new array with each number multiplied by 5
@@ -77,6 +82,7 @@ export function quintuple(numbers) {
   // TODO
 }
 
+//6
 /**
  * There is a general rule for making nouns plural in English:
  * Add "s" to the end of the word, unless the word already ends with "s",
@@ -98,6 +104,7 @@ export function pluralize(words) {
   // TODO
 }
 
+//7
 /**
  * @param {boolean[]} attendance - an array representing student attendance
  * - true = student is present
@@ -115,6 +122,7 @@ export function countAttendance(attendance) {
   // TODO
 }
 
+//8
 /**
  * @param {string[]} sentence - an array of words
  * @returns {string} the first longest word in the sentence
@@ -131,6 +139,7 @@ export function getLongestWord(sentence) {
   // TODO
 }
 
+//9
 /**
  * @param {string[]} playlist - an array of song titles
  * @param {string} song - the name of a song to find
@@ -148,6 +157,7 @@ export function findSong(playlist, song) {
   // TODO
 }
 
+//10
 /**
  * @param {string[][]} map - a 2D array in which each element is a string that
  *  represents something in the area, such as "tree", "pigeon", "lamp", or "guard"
