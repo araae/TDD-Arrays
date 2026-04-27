@@ -11,7 +11,8 @@
  * getFirst([true,false,true]); // true
  */
 export function getFirst(array) {
-  //return the first element of the array
+  //return the first element of the array which should always start with 0
+  return array[0];
 }
 
 //2
