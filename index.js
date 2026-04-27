@@ -28,7 +28,8 @@ export function getFirst(array) {
  * getLast([true,false,true]); // true
  */
 export function getLast(array) {
-  // TODO
+  //return the last element of the array which should always end with - 1
+  return array[array.length - 1];
 }
 
 //3
