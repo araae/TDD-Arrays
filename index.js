@@ -29,7 +29,7 @@ export function getFirst(array) {
  */
 export function getLast(array) {
   //return the last element of the array which should always end with - 1
-  return array[array.length - 1];
+  return array.at(-1);
 }
 
 //3
@@ -48,10 +48,8 @@ export function getLast(array) {
  */
 export function getFirstLast(array) {
   //return first and last if not, empty
-  if (array.length < 2) {
-    return array;
-  }
-  return [array[0], array[array.length - 1]];
+  if (array.length < 2) return array;
+  return [array[0], array.at(-1)];
 }
 
 //4
