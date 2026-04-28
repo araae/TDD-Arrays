@@ -88,7 +88,9 @@ export function sharesFirstLetter(str1, str2) {
 export function quintuple(numbers) {
   //build a new array with each number multiplied by 5
   const result = [];
-  for (const num of numbers) result.push(num * 5);
+  for (const num of numbers) {
+    result.push(num * 5);
+  }
   return result;
 }
 
@@ -139,7 +141,7 @@ export function countAttendance(attendance) {
   let result = 0;
   for (const student of attendance) {
     if (student) {
-      result += 1;
+      result += 1; // already has {}!
     }
   }
   return result;
@@ -159,7 +161,13 @@ export function countAttendance(attendance) {
  * getLongestWord(["a", "ab", "abc"]); // "abc"
  */
 export function getLongestWord(sentence) {
-  // TODO
+  //find the longest word unless empty
+  if (sentence.length === 0) return null;
+  let longest = sentence[0];
+  for (const word of sentence) {
+    if (word.length > longest.length) longest = word;
+  }
+  return longest;
 }
 
 //9
@@ -177,7 +185,11 @@ export function getLongestWord(sentence) {
  * findSong([], "Midnight Drive"); // -1
  */
 export function findSong(playlist, song) {
-  // TODO
+  //find the index of the song
+  for (const track of playlist) {
+    if (track === song) return playlist.indexOf(track);
+  }
+  return -1;
 }
 
 //10
@@ -195,5 +207,11 @@ export function findSong(playlist, song) {
  * findSpy([["tree","lamp"],["pigeon","guard"]]); // null
  */
 export function findSpy(map) {
-  // TODO
+  //find the spy coordinates
+  for (let i = 0; i < map.length; i += 1) {
+    for (let j = 0; j < map[i].length; j += 1) {
+      if (map[i][j] === "spy") return [i, j];
+    }
+  }
+  return null;
 }
