@@ -208,9 +208,9 @@ export function findSong(playlist, song) {
  */
 export function findSpy(map) {
   //find the spy coordinates
-  for (let i = 0; i < map.length; i += 1) {
-    for (let j = 0; j < map[i].length; j += 1) {
-      if (map[i][j] === "spy") return [i, j];
+  for (let row = 0; row < map.length; row++) {
+    for (let col = 0; col < map[row].length; col++) {
+      if (map[row][col] === "spy") return [row, col];
     }
   }
   return null;
