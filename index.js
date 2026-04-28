@@ -111,7 +111,13 @@ export function quintuple(numbers) {
  * pluralize([]); // []
  */
 export function pluralize(words) {
-  // TODO
+  // if word doesnt end with s, add s to the end of it
+  const result = [];
+  for (const word of words) {
+    const plural = word + (word.endsWith("s") ? "es" : "s");
+    result.push(plural);
+  }
+  return result;
 }
 
 //7
@@ -129,7 +135,14 @@ export function pluralize(words) {
  * countAttendance([]); // 0
  */
 export function countAttendance(attendance) {
-  // TODO
+  //check if student is present
+  let result = 0;
+  for (const student of attendance) {
+    if (student) {
+      result += 1;
+    }
+  }
+  return result;
 }
 
 //8
