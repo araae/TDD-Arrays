@@ -69,7 +69,7 @@ export function getFirstLast(array) {
  */
 export function sharesFirstLetter(str1, str2) {
   //check if the first letter of both strings are the same, if empty return false
-  if (str1.length === 0 || str2.length === 0) return false;
+  if (str1 === "" || str2 === "") return false;
   return str1[0] === str2[0];
 }
 
@@ -86,7 +86,10 @@ export function sharesFirstLetter(str1, str2) {
  * quintuple([]); // []
  */
 export function quintuple(numbers) {
-  // TODO
+  //build a new array with each number multiplied by 5
+  const result = [];
+  for (const num of numbers) result.push(num * 5);
+  return result;
 }
 
 //6
