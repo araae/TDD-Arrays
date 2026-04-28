@@ -47,7 +47,11 @@ export function getLast(array) {
  * getFirstLast([42]); // [42]
  */
 export function getFirstLast(array) {
-  // TODO
+  //return first and last if not, empty
+  if (array.length < 2) {
+    return array;
+  }
+  return [array[0], array[array.length - 1]];
 }
 
 //4
