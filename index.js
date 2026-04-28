@@ -49,8 +49,9 @@ export function getLast(array) {
 export function getFirstLast(array) {
   //return first and last if not, empty
   if (array.length < 2) return array;
-  return [array[0], array.at(-1)];
+  return [getFirst(array), getLast(array)];
 }
+//reuse function
 
 //4
 /**
@@ -67,7 +68,9 @@ export function getFirstLast(array) {
  * sharesFirstLetter("cat", "dog"); // false
  */
 export function sharesFirstLetter(str1, str2) {
-  // TODO
+  //check if the first letter of both strings are the same, if empty return false
+  if (str1.length === 0 || str2.length === 0) return false;
+  return str1[0] === str2[0];
 }
 
 //5
